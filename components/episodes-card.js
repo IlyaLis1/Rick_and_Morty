@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function EpisodesCard({ name, airDate, episode }) {
+export default function EpisodesCard({ name, air_date, episode }) {
     return (
         <div
             style={{
@@ -17,7 +17,7 @@ export default function EpisodesCard({ name, airDate, episode }) {
         >
             <span style={{ fontFamily: 'Roboto', fontSize: '1.3em', color: 'black' }}>{name}</span>
             <span style={{ padding: '1em', fontFamily: 'Roboto', fontSize: '0.9em', color: 'gray' }}>
-                {new Date(airDate).toLocaleDateString('en-US', {
+                {new Date(air_date).toLocaleDateString('en-US', {
                     month: 'long',
                     day: 'numeric',
                     year: 'numeric',

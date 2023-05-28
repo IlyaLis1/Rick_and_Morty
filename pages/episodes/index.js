@@ -73,7 +73,7 @@ export default function Episodes() {
               <EpisodesCard
                 name={episode.name}
                 episode={episode.episode}
-                airDate={episode.air_date}
+                air_date={episode.air_date}
               />
             </Link>
           ))}
